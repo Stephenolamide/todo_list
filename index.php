@@ -1,3 +1,4 @@
+<!-- landing page -->
 <?php
 session_start();
 if (isset($_SESSION['user'])) {
@@ -11,7 +12,7 @@ if (isset($_SESSION['user'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="./public/styles.css">
 </head>
 
 <body>

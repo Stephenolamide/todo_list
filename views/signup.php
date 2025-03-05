@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
-    <link rel="stylesheet" href="public/signup.css">
+    <link rel="stylesheet" href="../public/signup.css">
 </head>
 <body>
     <div class="auth-container">

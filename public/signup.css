@@ -1,4 +1,6 @@
-/* Global Styles */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,111 +9,101 @@
 }
 
 body {
-    background: linear-gradient(to right, #667eea, #764ba2);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
 }
 
-/* Auth Container */
+/* Centered Auth Container */
 .auth-container {
-    background: white;
-    padding: 30px;
-    width: 350px;
+    background: #fff;
+    padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    animation: fadeIn 0.8s ease-in-out;
+    width: 350px;
+    max-width: 90%;
 }
 
 .auth-container h2 {
-    margin-bottom: 20px;
+    font-size: 1.8rem;
     color: #333;
+    margin-bottom: 1rem;
 }
 
 /* Input Group */
 .input-group {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .input-group input {
     width: 100%;
     padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
     outline: none;
-    transition: border 0.3s ease;
+    transition: border 0.3s;
+    background: transparent;
 }
 
+/* Label Styling */
 .input-group label {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    font-size: 16px;
-    color: #aaa;
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    color: #777;
+    transition: 0.3s;
     pointer-events: none;
 }
 
-/* Floating Label Animation */
+/* Floating Label Effect */
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+    border-color: #6a11cb;
+}
+
 .input-group input:focus + label,
 .input-group input:not(:placeholder-shown) + label {
-    top: 5px;
-    left: 10px;
-    font-size: 12px;
-    color: #764ba2;
+    top: 10px;
+    font-size: 0.85rem;
+    color: #6a11cb;
 }
 
-.input-group input:focus {
-    border-color: #764ba2;
-}
-
-/* Button */
+/* Button Styling */
 .btn {
     width: 100%;
     padding: 12px;
-    background: #764ba2;
-    color: white;
+    font-size: 1rem;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 18px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #5b3b91;
+    background: linear-gradient(to right, #5a0fb5, #1e5de8);
 }
 
-/* Text Link */
+/* Login Link */
 p {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #333;
+    margin-top: 1rem;
+    font-size: 0.95rem;
 }
 
 p a {
-    color: #764ba2;
+    color: #6a11cb;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 p a:hover {
     text-decoration: underline;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
